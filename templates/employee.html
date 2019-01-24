@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	{% for employee in employees %}
+  <h1>{{employee.emp_id}}</h1>
+  <small>manages by {{employee.manager_id}}</small>
+   {% endfor %}
+ 
+{% endblock %}
